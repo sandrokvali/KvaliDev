@@ -1,0 +1,13 @@
+{
+  "name": "undderun",
+  "version": "1.0.0",
+  "description": "Game About Servers",
+  "main": "underrun.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kvali",
+  "dependencies": {
+    "uglify-es": "^3.3.9"
+  }
+}

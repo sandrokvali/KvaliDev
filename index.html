@@ -1,0 +1,603 @@
+<html lang="en">
+
+<head>
+	<link rel="manifest" href="/manifest.json">
+	<base href="/">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/styles.min.css">
+	<!-- favicon -->
+	<link rel="icon" href="img/favicon.ico">
+	<title>Kvali.Dev</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap" rel="stylesheet">
+
+	<script>
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+			// true for mobile device
+			window.location.href = '/Mobile.html';
+		} else {
+			// false for not mobile device
+		}
+	</script>
+
+	<!--  Social tags -->
+	<meta name="keywords"
+		content="kvali, sandrokvali, game, games, თამაშები, ქართულად, ქართული, კვალი, სანდრო, კვალიაშვილი, animation,animations, kvalianimations, dev, kvalidev, kvali.dev, Coup, კოუპ, tetris, ტეტრისი">
+	<meta name="description" content="აქ დაიდება კვალის მიერ შექმნილი თამაშები და საინტერესო საიტები.">
+
+	<!-- Schema.org markup for Google+ -->
+	<meta itemprop="name" content="Kvali.Dev">
+	<meta itemprop="description" content="აქ დაიდება კვალის მიერ შექმნილი თამაშები და საინტერესო საიტები.">
+	<meta itemprop="image" content="https://cdn.discordapp.com/emojis/817491907529015308.png?v=1">
+
+	<!-- Open Graph data -->
+	<meta property="fb:app_id" content="214738555737136">
+	<meta property="og:title" content="Kvali.Dev">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="https://cdn.discordapp.com/emojis/817491907529015308.png?v=1">
+	<meta property="og:description" content="აქ დაიდება კვალის მიერ შექმნილი თამაშები და საინტერესო საიტები.">
+	<meta property="og:site_name" content="Kvali">
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="120x120" href="https://cdn.discordapp.com/emojis/817491907529015308.png?v=1">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.discordapp.com/emojis/817491907529015308.png?v=1">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.discordapp.com/emojis/817491907529015308.png?v=1">
+	<link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="https://cdn.discordapp.com/emojis/817491907529015308.png?v=1" color="#ffffff">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+
+	<style type="text/css">
+		@keyframes ripple-anim {
+			0% {
+				top: 28px;
+				left: 28px;
+				width: 0;
+				height: 0;
+				opacity: 1;
+			}
+
+			100% {
+				top: -1px;
+				left: -1px;
+				width: 58px;
+				height: 58px;
+				opacity: 0;
+			}
+		}
+	</style>
+	<style type="text/css">
+		@keyframes ripple-anim-small {
+			0% {
+				top: 14px;
+				left: 14px;
+				width: 0;
+				height: 0;
+				opacity: 1;
+			}
+
+			100% {
+				top: -1px;
+				left: -1px;
+				width: 29px;
+				height: 29px;
+				opacity: 0;
+			}
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap" rel="stylesheet">
+	<style type="text/css">
+		@keyframes ripple-anim {
+			0% {
+				top: 28px;
+				left: 28px;
+				width: 0;
+				height: 0;
+				opacity: 1;
+			}
+
+			100% {
+				top: -1px;
+				left: -1px;
+				width: 58px;
+				height: 58px;
+				opacity: 0;
+			}
+		}
+	</style>
+	<style type="text/css">
+		@keyframes ripple-anim-small {
+			0% {
+				top: 14px;
+				left: 14px;
+				width: 0;
+				height: 0;
+				opacity: 1;
+			}
+
+			100% {
+				top: -1px;
+				left: -1px;
+				width: 29px;
+				height: 29px;
+				opacity: 0;
+			}
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap" rel="stylesheet">
+	<style type="text/css">
+		@keyframes ripple-anim {
+			0% {
+				top: 28px;
+				left: 28px;
+				width: 0;
+				height: 0;
+				opacity: 1;
+			}
+
+			100% {
+				top: -1px;
+				left: -1px;
+				width: 58px;
+				height: 58px;
+				opacity: 0;
+			}
+		}
+	</style>
+	<style type="text/css">
+		@keyframes ripple-anim-small {
+			0% {
+				top: 14px;
+				left: 14px;
+				width: 0;
+				height: 0;
+				opacity: 1;
+			}
+
+			100% {
+				top: -1px;
+				left: -1px;
+				width: 29px;
+				height: 29px;
+				opacity: 0;
+			}
+		}
+	</style>
+</head>
+
+<body class="">
+	<!-- OVERLAY MAIN -->
+	<div class="overlay-main" style="display: block;">
+		<!-- NAVIGATION MOBILE -->
+		<nav class="navigation-mobile" style="display: block;">
+			<!-- LOGO -->
+			<div class="logo small">
+				<!-- LOGO TEXT -->
+				<h1 class="logo-text">Kvali.Dev</h1>
+				<!-- /LOGO TEXT -->
+			</div>
+			<!-- /LOGO -->
+			<!-- MENU MOBILE -->
+			<ul class="menu-mobile">
+				<!-- MENU MOBILE ITEM -->
+				<li class="menu-mobile-item ">
+					<!-- MENU MOBILE ITEM LINK --><a class="menu-mobile-item-link"
+						href="https://www.facebook.com/people/Sandro-Kvaliashvili/100018376695432/">Facebook</a>
+					<!-- /MENU MOBILE ITEM LINK -->
+				</li>
+				<!-- /MENU MOBILE ITEM -->
+				<!-- MENU MOBILE ITEM -->
+				<li class="menu-mobile-item selected">
+					<!-- MENU MOBILE ITEM LINK --><a class="menu-mobile-item-link"
+						href="https://www.instagram.com/SandroKvali/">Instagram</a><!-- /MENU MOBILE ITEM LINK -->
+				</li>
+				<!-- /MENU MOBILE ITEM -->
+				<!-- MENU MOBILE ITEM -->
+				<li class="menu-mobile-item ">
+					<!-- MENU MOBILE ITEM LINK --><a class="menu-mobile-item-link"
+						href="https://twitter.com/KvaliAnimations">Twitter</a><!-- /MENU MOBILE ITEM LINK -->
+				</li>
+				<!-- /MENU MOBILE ITEM -->
+			</ul>
+			<!-- /MENU MOBILE -->
+		</nav>
+		<!-- /NAVIGATION MOBILE -->
+	</div>
+	<!-- OVERLAY MAIN -->
+	<!-- SIDEBAR -->
+	<aside class="sidebar">
+		<!-- SIDEBAR LOGO -->
+		<div class="sidebar-logo">
+			<!-- ICON ODIN LOGO -->
+			<svg class="icon-odin-logo">
+				<use href="./Images/discordo1.svg"></use>
+			</svg>
+			<!-- /ICON ODIN LOGO -->
+		</div>
+		<!-- /SIDEBAR LOGO -->
+		<!-- SIDEBAR SOCIAL -->
+		<div class="sidebar-social">
+			<!-- SIDEBAR SOCIAL ITEM -->
+			<a class="sidebar-social-item" href="https://www.facebook.com/people/Sandro-Kvaliashvili/100018376695432/"
+				target="_blank">
+				<!-- SIDEBAR SOCIAL ITEM ICON -->
+				<svg class="sidebar-social-item-icon icon-facebook">
+					<use xlink:href="#svg-facebook"></use>
+				</svg>
+				<!-- /SIDEBAR SOCIAL ITEM ICON -->
+			</a>
+			<!-- /SIDEBAR SOCIAL ITEM -->
+			<!-- SIDEBAR SOCIAL ITEM -->
+			<a class="sidebar-social-item" href="https://twitter.com/KvaliAnimations" target="_blank">
+				<!-- SIDEBAR SOCIAL ITEM ICON -->
+				<svg class="sidebar-social-item-icon icon-twitter">
+					<use xlink:href="#svg-twitter"></use>
+				</svg>
+				<!-- /SIDEBAR SOCIAL ITEM ICON -->
+			</a>
+			<!-- /SIDEBAR SOCIAL ITEM -->
+			<!-- SIDEBAR SOCIAL ITEM -->
+			<a class="sidebar-social-item" href="https://www.instagram.com/SandroKvali/" target="_blank">
+				<!-- SIDEBAR SOCIAL ITEM ICON -->
+				<svg class="sidebar-social-item-icon icon-instagram">
+					<use xlink:href="#svg-instagram"></use>
+				</svg>
+				<!-- /SIDEBAR SOCIAL ITEM ICON -->
+			</a>
+			<!-- /SIDEBAR SOCIAL ITEM -->
+			<!-- SIDEBAR SOCIAL ITEM -->
+			<!-- /SIDEBAR SOCIAL ITEM -->
+		</div>
+		<!-- /SIDEBAR SOCIAL -->
+	</aside>
+	<!-- /SIDEBAR -->
+	<!-- SECTION -->
+	<section class="section grid-limit no-padding-bottom">
+		<!-- SECTION HEADING -->
+		<div class="section-heading">
+			<!-- SECTION TITLE -->
+			<h2 class="section-title">Kvali.Dev</h2>
+			<!-- /SECTION TITLE -->
+		</div>
+		<!-- /SECTION HEADING -->
+	</section>
+	<!-- /SECTION -->
+	<!-- PRODUCTS PREVIEW -->
+	<div id="products-preview">
+		<section class="products grid-3-370-full">
+			<article class="product-preview underrun">
+				<h2 class="product-preview-title">KVALI UNDERRUN</h2>
+				<p class="product-preview-text">საიტის ყველა სერვერი გაიტიშა... დისტანციურად მათი ჩართვა არ გამოვიდა... შენ უნდა
+					მიხვიდე სერვერებთან და ჩართო ისინი! ეცადე არ მოკვდე...
+				</p>
+				<img class="product-preview-image" src="img/products/Underrun.png" alt="product-preview-image"><img
+					class="product-preview-image small" src="img/products/UnderrunSmall.png" alt="product-preview-image-small">
+				<div class="product-preview-actions"><a class="product-preview-button underrunbtn"
+						href="UNDERRUN/Main.html">ითამაშე</a>
+				</div>
+				<a class="product-preview-link" href="UNDERRUN/Main.html"></a>
+			</article>
+			<article class="product-preview coup">
+				<h2 class="product-preview-title">Kvali Coup
+				</h2>
+				<div class="tag-list medium"></div>
+				<p class="product-preview-text">ითამაშე Kvali Coup-ი 2-6 მეგობართან ერთად!
+				</p>
+				<img class="product-preview-image" src="img/products/Coup.png" alt="product-preview-image"><img
+					class="product-preview-image small" src="img/products/CoupSmall.png" alt="product-preview-image-small">
+				<div class="product-preview-actions"><a class="product-preview-button coupbtn" href="COUP/Home">ითამაშე</a>
+				</div>
+				<a class="product-preview-link" href="COUP/Home.html"></a>
+			</article>
+			<article class="product-preview menja">
+				<h2 class="product-preview-title">Menja</h2>
+				<div class="tag-list medium"></div>
+				<p class="product-preview-text">გახსოვთ ძველი თამაში სადაც ხილებს ჭრიდი? მსგავსი თამაშია უბრალოდ აქ კუბებია.
+				</p>
+				<img class="product-preview-image" src="img/products/Menja.png" alt="product-preview-image"><img
+					class="product-preview-image small" src="img/products/MenjaSmall.png" alt="product-preview-image-small">
+				<div class="product-preview-actions"><a class="product-preview-button menjabtn"
+						href="BlockNinja/Main">ითამაშე</a>
+				</div>
+				<a class="product-preview-link" href="BlockNinja/Main.html"></a>
+			</article>
+
+			<article class="product-preview KvaliPong">
+				<h2 class="product-preview-title">Kvali Pong
+				</h2>
+				<div class="tag-list medium"></div>
+				<p class="product-preview-text">რეკრეაცია ძველი თამაშის, რომელიც 3:4 გაფართოების ეკრანებზე ითამაშებოდა.
+				</p>
+				<img style="height: 100%;" class="product-preview-image" src="img/products/Pong.png" alt="product-preview-image"><img
+					class="product-preview-image small" src="img/products/PongSmall.png" alt="product-preview-image-small">
+				<div class="product-preview-actions"><a class="product-preview-button KvaliPongbtn" href="Pong/Game">ითამაშე</a>
+				</div>
+				<a class="product-preview-link" href="Pong/Game.html"></a>
+			</article>
+
+			<article class="product-preview Flappy">
+				<h2 class="product-preview-title">Flappy Bird
+				</h2>
+				<div class="tag-list medium"></div>
+				<p class="product-preview-text">რეკრეაცია Flappy Bird-ის.
+				</p>
+				<img style="width: 70%;" class="product-preview-image" src="img/products/Flappy.png" alt="product-preview-image"><img
+					class="product-preview-image small" src="img/products/FlappySmall.png" alt="product-preview-image-small">
+				<div class="product-preview-actions"><a class="product-preview-button Flappybtn" href="Flappy/Game">ითამაშე</a>
+				</div>
+				<a class="product-preview-link" href="Flappy/Game.html"></a>
+			</article>
+
+			<article class="product-preview KvaliGame">
+				<h2 class="product-preview-title">Kvali Game
+				</h2>
+				<div class="tag-list medium"></div>
+				<p class="product-preview-text">ჯერ დაუსრულებელია და არ ვიცი რა იქნება. (კვალი ვარ მომავლიდან... ეს პროექტი დავკარგე და არასდროს დასრულდება თამაში:D)
+				</p>
+				<img class="product-preview-image" src="img/products/KvaliGame.png" alt="product-preview-image"><img
+					class="product-preview-image small" src="img/products/KvaliGameSmall.png" alt="product-preview-image-small">
+				<div class="product-preview-actions"><a class="product-preview-button KvaliGamebtn"
+						href="Kvali/Game">ითამაშე</a>
+				</div>
+				<a class="product-preview-link" href="Kvali/Game.html"></a>
+			</article>
+			<article class="product-preview xo">
+				<h2 class="product-preview-title">Kvali Tic Tac Toe
+					<div class="tag-list medium"></div>
+					<p class="product-preview-text">ეს არის ეგრედწოდებული "იქსიკი და ნოლიკი".
+					</p>
+					<img class="product-preview-image" src="img/products/Xo.png" alt="product-preview-image"><img
+						class="product-preview-image small" src="img/products/XoSmall.png" alt="product-preview-image-small">
+					<div class="product-preview-actions"><a class="product-preview-button xobtn" href="XO/Main">ითამაშე
+					</div>
+					<a class="product-preview-link" href="XO/Main.html"></a>
+			</article>
+			<article class="product-preview tetris">
+				<h2 class="product-preview-title">Kvali Tetris
+				</h2>
+				<div class="tag-list medium"></div>
+				<p class="product-preview-text">ეს არის ტეტრისი... ჩამოვარდება სხვადასხვა ფერის ფორმები და ისე უნდა დააწყო რომ
+					ზოლად შეივსოს. შევსების თანავე ზოლი გაქრება. აბა რამდენხანს გაძლებ?
+				</p>
+				<img class="product-preview-image" src="img/products/Tetris.png" alt="product-preview-image"><img
+					class="product-preview-image small" src="img/products/TetrisSmall.png" alt="product-preview-image-small">
+				<div class="product-preview-actions"><a class="product-preview-button tetrisbtn" href="Tetris/Home">ითამაშე
+				</div>
+				<a class="product-preview-link" href="Tetris/Home.html"></a>
+			</article>
+			<article class="product-preview minesweeper">
+				<h2 class="product-preview-title">Kvali MineSweeper
+				</h2>
+				<div class="tag-list medium"></div>
+				<p class="product-preview-text">ეს არის MineSweeper. ეს არის მინდორი რომელიც დანაღმულია... ციფრები გიჩვენებენ
+					მისი 1 ბლოკის რადიუსზე რამდენი ნაღმი დევს. შენ უნდა გამოიცნო სად არის ყველა ნაღმი და მონიშნო მარჯვენა ღილაკით.
+					სადამდე გაწვდები?
+				</p>
+				<img class="product-preview-image" src="img/products/Minesweeper.png" alt="product-preview-image"><img
+					class="product-preview-image small" src="img/products/MinesweeperSmall.png" alt="product-preview-image-small">
+				<div class="product-preview-actions"><a class="product-preview-button minesweeperbtn"
+						href="Msweeper/Main">ითამაშე
+				</div>
+				<a class="product-preview-link" href="Msweeper/Main.html"></a>
+			</article>
+			<article class="product-preview dyno">
+				<h2 class="product-preview-title">Kvali Dyno
+					<div class="tag-list medium"></div>
+					<p class="product-preview-text">მგონი ამის ახსნა არც მჭირდება.
+					</p>
+					<img class="product-preview-image" src="img/products/Dyno.png" alt="product-preview-image"><img
+						class="product-preview-image small" src="img/products/DynoSmall.png" alt="product-preview-image-small">
+					<div class="product-preview-actions"><a class="product-preview-button dynobtn" href="DYNO/Game">ითამაშე
+					</div>
+					<a class="product-preview-link" href="DYNO/Game.html"></a>
+			</article>
+			<article class="product-preview camAI">
+				<h2 class="product-preview-title">Cam Ai
+					<div class="tag-list medium"></div>
+					<p class="product-preview-text">ეს არის Object Detection. რასაც დაანახებ კამერას, Cam Ai გამოიცნობს თუ რა
+						დაანახე, მას შემოგიხაზავს და თან გეტყვის თუ რამდენი პროცენტით არის დარწმუნებული რომ სწორად გამოიცნო.
+					</p>
+					<img class="product-preview-image" src="img/products/CamAI.png" alt="product-preview-image"><img
+						class="product-preview-image small" src="img/products/CamAISmall.png" alt="product-preview-image-small">
+					<div class="product-preview-actions"><a class="product-preview-button camAIbtn" href="Cam/AI">გამოცადე
+					</div>
+					<a class="product-preview-link" href="Cam/AI.html"></a>
+			</article>
+			<article class="product-preview robux">
+				<h2 class="product-preview-title">Free Robux
+				</h2>
+				<div class="tag-list medium"></div>
+				<p class="product-preview-text">ჩვეულებრივი Prank საიტია... ღილაკს Rick Roll-ზე გადაყავხართ.
+				</p>
+				<img class="product-preview-image" src="img/products/Robux.png" alt="product-preview-image"><img
+					class="product-preview-image small" src="img/products/RobuxSmall.png" alt="product-preview-image-small">
+				<div class="product-preview-actions"><a class="product-preview-button robuxbtn"
+						href="FreeRobux/Home">გამოცადე</a>
+				</div>
+				<a class="product-preview-link" href="FreeRobux/Home.html"></a>
+			</article>
+		</section>
+	</div>
+	<!-- /PRODUCTS PREVIEW -->
+	<!-- FOOTER -->
+	<footer class="footer grid-limit">
+		<!-- FOOTER INFO -->
+		<div class="footer-info">
+			<!-- LOGO -->
+			<div class="logo">
+				<!-- LOGO IMAGE -->
+				<svg class="logo-image icon-odin-logo">
+					<use xlink:href="#svg-odin-logo"></use>
+				</svg>
+				<!-- /LOGO IMAGE -->
+				<!-- LOGO TEXT -->
+				<p class="logo-text">KvaliDev</p>
+				<!-- /LOGO TEXT -->
+			</div>
+			<!-- /LOGO -->
+			<!-- FOOTER INFO TEXT -->
+			<p class="footer-info-text">აქ დაიდება კვალის მიერ გაკეთებული თამაშები და საინტერესო საიტები.</p>
+			<!-- /FOOTER INFO TEXT -->
+		</div>
+		<!-- /FOOTER INFO -->
+		<!-- FOOTER NAVIGATION -->
+		<nav class="footer-navigation">
+			<!-- FOOTER NAVIGATION TITLE -->
+			<p class="footer-navigation-title">Social Media Links</p>
+			<!-- /FOOTER NAVIGATION TITLE -->
+			<!-- FOOTER MENU LIST -->
+			<div class="footer-menu-list">
+				<!-- FOOTER MENU -->
+				<ul class="footer-menu">
+					<!-- FOOTER MENU ITEM -->
+					<li class="footer-menu-item">
+						<!-- MENU MOBILE ITEM LINK --><a class="footer-menu-item-link"
+							href="https://www.facebook.com/people/Sandro-Kvaliashvili/100018376695432/">Facebook</a>
+						<!-- /MENU MOBILE ITEM LINK -->
+					</li>
+					<!-- /MENU MOBILE ITEM -->
+					<!-- MENU MOBILE ITEM -->
+					<li class="footer-menu-item">
+						<!-- MENU MOBILE ITEM LINK --><a class="footer-menu-item-link"
+							href="https://www.instagram.com/SandroKvali/">Instagram</a><!-- /MENU MOBILE ITEM LINK -->
+					</li>
+					<!-- /MENU MOBILE ITEM -->
+					<!-- MENU MOBILE ITEM -->
+					<li class="footer-menu-item">
+						<!-- MENU MOBILE ITEM LINK --><a class="footer-menu-item-link"
+							href="https://twitter.com/KvaliAnimations">Twitter</a><!-- /MENU MOBILE ITEM LINK -->
+					</li>
+					<!-- /FOOTER MENU ITEM -->
+				</ul>
+				<!-- /FOOTER MENU -->
+			</div>
+			<!-- /FOOTER MENU LIST -->
+		</nav>
+		<!-- /FOOTER NAVIGATION -->
+	</footer>
+	<!-- /FOOTER -->
+	<!-- asgard alerter -->
+	<script src="asgard_alerter.min.js"></script><!-- app -->
+	<div>
+
+		<!-- SVG PULL -->
+		<svg style="display: none;">
+			<symbol id="svg-pull" viewBox="0 0 20 20" preserveAspectRatio="xMinYMin meet">
+				<path
+					d="M19,11h-8V9h8c0.553,0,1,0.448,1,1C20,10.552,19.553,11,19,11zM19,5H6V3h13c0.553,0,1,0.447,1,1S19.553,5,19,5z M0,4c0-0.552,0.447-1,1-1h3v2H1C0.447,5,0,4.552,0,4z M1,9h8v2H1
+      c-0.553,0-1-0.447-1-1C0,9.447,0.447,9,1,9z M1,15h13v2H1c-0.553,0-1-0.448-1-1C0,15.447,0.447,15,1,15z M19,15c0.553,0,1,0.447,1,1c0,0.552-0.447,1-1,1h-3v-2H19z">
+				</path>
+			</symbol>
+		</svg>
+		<!-- /SVG PULL -->
+
+		<!-- SVG FACEBOOK -->
+		<svg style="display: none;">
+			<symbol id="svg-facebook" viewBox="0 0 18 18" preserveAspectRatio="xMinYMin meet">
+				<path
+					d="M16.313,18h-4.504v-6.192h3.087V8.671h-3.087V7.135V6.831V6.814l0,0c0.01-0.328,0.277-0.591,0.607-0.591h0.067h1.113h1.62V3.086h-2.733l0,0l-0.009,0.018h-0.092c-2.051,0-3.712,1.661-3.712,3.711v0.911v0.945H6.191v3.137h2.479V18H1.687C0.755,18,0,17.242,0,16.313V1.686C0,0.754,0.755,0,1.687,0h14.626C17.244,0,18,0.754,18,1.686v14.627C18,17.242,17.244,18,16.313,18z">
+				</path>
+			</symbol>
+		</svg>
+		<!-- /SVG FACEBOOK -->
+
+		<!-- SVG TWITTER -->
+		<svg style="display: none;">
+			<symbol id="svg-twitter" viewBox="0 0 18 18" preserveAspectRatio="xMinYMin meet">
+				<path
+					d="M18,3.617c-0.675,0.322-1.351,0.43-2.139,0.537c0.788-0.43,1.351-1.076,1.576-1.937c-0.675,0.43-1.463,0.646-2.362,0.861C14.399,2.431,13.388,2,12.375,2c-1.912,0-3.601,1.617-3.601,3.554c0,0.323,0,0.538,0.113,0.754C5.851,6.2,3.038,4.8,1.238,2.646C0.9,3.185,0.788,3.724,0.788,4.478c0,1.184,0.675,2.261,1.688,2.907c-0.563,0-1.125-0.216-1.688-0.431l0,0c0,1.723,1.237,3.122,2.925,3.446c-0.338,0.107-0.675,0.107-1.013,0.107c-0.225,0-0.45,0-0.675-0.107c0.45,1.399,1.8,2.476,3.487,2.476C4.274,13.846,2.7,14.384,0.9,14.384c-0.338,0-0.563,0-0.9,0C1.688,15.354,3.601,16,5.625,16c6.75,0,10.462-5.385,10.462-10.015c0-0.108,0-0.323,0-0.431C16.875,5.016,17.549,4.371,18,3.617z">
+				</path>
+			</symbol>
+		</svg>
+		<!-- /SVG TWITTER -->
+
+		<!-- SVG INSTAGRAM -->
+		<svg style="display: none;">
+			<symbol id="svg-instagram" viewBox="0 0 18 18" preserveAspectRatio="xMinYMin meet">
+				<path
+					d="M13.032,0H4.967C2.229,0,0,2.228,0,4.967v8.066C0,15.77,2.229,18,4.967,18h8.065C15.771,18,18,15.77,18,13.033V4.967C18,2.228,15.771,0,13.032,0z M15.964,12.793c0,1.748-1.423,3.17-3.171,3.17H5.206c-1.748,0-3.171-1.422-3.171-3.17V5.206c0-1.749,1.423-3.17,3.171-3.17h7.587c1.748,0,3.171,1.422,3.171,3.17V12.793z M9,4.819c-2.305,0-4.18,1.876-4.18,4.18c0,2.303,1.875,4.178,4.18,4.178S13.18,11.303,13.18,9C13.18,6.696,11.305,4.819,9,4.819zM9,11.463c-1.358,0-2.464-1.104-2.464-2.463c0-1.358,1.105-2.463,2.464-2.463c1.357,0,2.463,1.105,2.463,2.463
+      C11.463,10.358,10.357,11.463,9,11.463z M13.618,3.215c-0.308,0-0.789,0.13-1.028,0.371c-0.24,0.239-0.377,0.571-0.377,0.911c0,0.339,0.137,0.671,0.377,0.912c0.238,0.238,0.571,0.377,0.909,0.377c0.339,0,0.671-0.139,0.91-0.377c0.239-0.24,0.377-0.574,0.377-0.912c0-0.34-0.138-0.672-0.377-0.911C14.17,3.345,13.927,3.215,13.618,3.215z">
+				</path>
+			</symbol>
+		</svg>
+		<!-- /SVG INSTAGRAM -->
+
+		<!-- SVG DRIBBBLE -->
+		<svg style="display: none;">
+			<symbol id="svg-dribbble" viewBox="0 0 18 18" preserveAspectRatio="xMinYMin meet">
+				<path
+					d="M9,18c-4.971,0-9-4.029-9-9s4.029-9,9-9s9,4.029,9,9S13.971,18,9,18z M11.15,7.489c0.226,0.456,0.441,0.91,0.641,1.356c1.222-0.202,2.544-0.208,3.949,0.069
+      c-0.014-1.312-0.407-2.529-1.068-3.561C13.592,6.254,12.387,6.95,11.15,7.489z M13.655,13.87c0.897-0.86,1.553-1.967,1.871-3.208c-0.729-0.129-1.775-0.226-3.012-0.081C13.021,11.876,13.4,13.027,13.655,13.87z M8.99,15.747c1.063,0,2.063-0.253,2.958-0.689c-0.231-1.413-0.65-2.805-1.165-4.127c-1.763,0.509-3.731,1.571-5.623,3.622C6.249,15.304,7.567,15.747,8.99,15.747z M3.834,13.349c1.199-1.255,3.367-3.145,6.238-4.083C9.889,8.872,9.699,8.49,9.506,8.116c-2.915,0.962-5.748,1.17-7.255,1.205C2.325,10.854,2.905,12.251,3.834,13.349z M2.388,7.574c2.602-0.196,4.646-0.581,6.241-1.05C7.71,4.951,6.806,3.665,6.193,2.85C4.276,3.725,2.84,5.466,2.388,7.574z M8.99,2.238c-0.386,0-0.762,0.039-1.13,0.102c0.936,1.096,1.754,2.332,2.467,3.594c1.636-0.67,2.605-1.403,3.163-1.967C12.295,2.896,10.722,2.238,8.99,2.238z">
+				</path>
+			</symbol>
+		</svg>
+		<!-- /SVG DRIBBBLE -->
+
+		<!-- SVG CROSS -->
+		<svg style="display: none;">
+			<symbol id="svg-cross" viewBox="0 0 20 20" preserveAspectRatio="xMinYMin meet">
+				<path
+					d="M17.682,3.855L11.537,10l6.145,6.145c0.425,0.425,0.424,1.112,0,1.536c-0.425,0.425-1.111,0.424-1.536,0l-6.145-6.146l-6.146,6.146c-0.424,0.425-1.113,0.424-1.536,0
+      c-0.425-0.425-0.424-1.112,0-1.536L8.465,10L2.318,3.854c-0.424-0.424-0.425-1.111,0-1.536c0.423-0.424,1.112-0.424,1.536,0l6.146,6.146l6.145-6.145c0.425-0.424,1.111-0.424,1.536,0S18.106,3.431,17.682,3.855z">
+				</path>
+			</symbol>
+		</svg>
+		<!-- /SVG CROSS -->
+
+		<!-- SVG STAR -->
+		<svg style="display: none;">
+			<symbol id="svg-star" viewBox="0 0 13 12" preserveAspectRatio="xMinYMin meet">
+				<path
+					d="M6.5,0l2.145,3.771l4.362,0.813L9.971,7.727l0.551,4.272L6.5,10.171l-4.021,1.828l0.551-4.272l-3.037-3.144l4.362-0.813L6.5,0">
+				</path>
+			</symbol>
+		</svg>
+		<!-- /SVG STAR -->
+	</div>
+
+
+
+
+	<script type="text/javascript">
+		// <![CDATA[  <-- For SVG support
+		if ('WebSocket' in window) {
+			(function () {
+				function refreshCSS() {
+					var sheets = [].slice.call(document.getElementsByTagName("link"));
+					var head = document.getElementsByTagName("head")[0];
+					for (var i = 0; i < sheets.length; ++i) {
+						var elem = sheets[i];
+						var parent = elem.parentElement || head;
+						parent.removeChild(elem);
+						var rel = elem.rel;
+						if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+							var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+							elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+						}
+						parent.appendChild(elem);
+					}
+				}
+				var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+				var address = protocol + window.location.host + window.location.pathname + '/ws';
+				var socket = new WebSocket(address);
+				socket.onmessage = function (msg) {
+					if (msg.data == 'reload') window.location.reload();
+					else if (msg.data == 'refreshcss') refreshCSS();
+				};
+				if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+					console.log('Live reload enabled.');
+					sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+				}
+			})();
+		}
+		else {
+			console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+		}
+	// ]]>
+	</script>
+	<img src="https://shareit.pics/image.php?id=KXCT1S.png">
+</body>
+
+</html>

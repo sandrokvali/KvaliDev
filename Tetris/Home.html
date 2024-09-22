@@ -1,0 +1,140 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link rel="manifest" href="/manifest.json">
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8"> 
+	<meta name="keywords" content="steven lu, tetris, game, free, javascript, html5, browser, native, iOS, iPhone, iPad, iPad 2, Android, webkit, opera, chrome, touch, safari">   
+	<meta name="description" content="This is a HTML5 tetris game that has wide browser support. It provides innovative intuitive touch controls for Apple iOS iPhone iPad products and also Android devices. ">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<title>Tetris! PAUSED</title>	
+	
+	<!-- strokeText.js from http://www.netzgesta.de/dev/text/#overview 
+	
+	I need to switch to displaying game messages using regular elements rather than scrawling on canvas
+	
+	-->
+	<script src="strokeText.js"></script>
+
+	<link rel="stylesheet" href="page.css" type="text/css">
+    
+	<style type="text/css"> /* These are just for finger debug elements */
+	body {
+			overscroll-behavior-y: contain;
+		}
+		.finger-indicator {
+			position: absolute;
+			z-index: 4;
+			border: 2px solid #4a4;
+			background-color: rgba(0,50,0,0.5);
+			padding: 4px;
+		}
+		.finger-indicator.control {
+			background-color: rgba(50,0,0,0.5);
+			border: 2px solid #a44;
+		}
+	</style>
+	
+	
+	<!-- <script src='style/prettify/prettify.js'></script>
+	<link href="style/prettify.css" rel="stylesheet" type="text/css" /> 
+
+	<script>Event.observe(window, 'load', function() {prettyPrint()});</script> -->
+
+	<script src="tetris.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		TETRIS.setScoreIncreasing();
+	</script>
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2939101466123368" crossorigin="anonymous"></script>	
+</head>
+
+
+<body>
+
+
+
+
+
+<div id="indicatorcontainer"></div>
+
+	<canvas id="board_canvas" width="794" height="1886" style="position:fixed; left:10px; top:10px; z-index:1">
+		Your browser does not support HTML5 Canvas.
+	</canvas>
+	<canvas id="animated_canvas" width="794" height="1886" style="position:fixed; left:10px; top:10px; z-index:3"></canvas>
+	<canvas id="shadow_canvas" width="794" height="1886" style="position:fixed; left:10px; top:10px; z-index:2"></canvas>
+	<!-- <div id="placeholder" style=""> </div> -->
+	
+	<div style="position: fixed; top: 10px; font-family: sans-serif; font-size: 30px; left: 814px;"> <span id="score">0</span></div>
+
+
+<div id="instructions" style="position: relative; margin-left: 794px; top: 34px;">
+
+
+
+	<div id="controls" style="float: left"> 
+		<input type="button" onclick="if (TETRIS.isPaused()) { TETRIS.unPause(); } else { TETRIS.setPause(); }" value="Pause" style="font-size: 150%"><br>
+	</div>
+	<div id="instr" style="display: none;"> 
+
+		<h1>HTML5 Tetris</h1>
+		<p> Touch events are now supported! Play on iOS and Android: <br>
+		Swipe anywhere to move, tap to rotate (Can also tap while swiping to rotate). Swipe down to drop.
+		</p>
+		<p>
+		Touch Sensitivity:
+		<input id="sens_range" type="range" min="0.2" max="5" step="0.05" value="1" onchange="TETRIS.setTouchSensitivity(this.value); document.getElementById(&quot;sensitivity&quot;).innerHTML = Math.round(this.value*1000)/1000;"> 
+		<span id="sensitivity">1</span>
+		</p>
+
+
+		<p> For PC/Mac: Use the Arrow keys to move and rotate, spacebar to drop. 
+		Z,X to rotate in either direction. </p>
+		<p> Pause: P</p>
+		<p> Mouse control (toggle): M<br>
+		left click to rotate and right click to drop:
+		<a href="https://www.mvpcashadvance.com/">MVP Cash Advance</a>. Mouse control is experimental. You can use your mouse while playing and order your paper at service to have more time for playing. Also you can find many other interesting occupations on <a href="https://csgoeasybets.com/">csgoeasybets</a>, espessially if you like CS-GO.
+		</p>
+		<p> To start a new game, refresh the page (F5)! </p>
+		<h2>We are grateful for the support</h2>
+		<p> 
+		<a href="http://Kvali.Dev/" title="Page with reviews of legal Polish online casinos by Milan Rabsz - Kvali "> 
+		<img border="0" alt="Kvali.Dev Polska" src="discordo1.svg" width="143" height="44"></a></p>
+		<p>This is all the rules you need to know, if you want to share them with friends, you can use <a href="https://www.onlineocr.net/">PDF to Word 
+		- Convert</a> to choose the most suitable format for you without any limits. </p>
+		<p>This is an infinite tetris game. To score more points, drop pieces as fast
+		as you can! For better entertainment you can also try the world of Dota 2 with <a href="https://dotabetz.com/">dotabetz.com</a>. <a href="how-not-to-lose.html">Instruction how not to lose</a> and some <a href="helpful-tips.html">helpful tips</a> and <a href="tips-and-tricks.html">tricks</a> in <a href="ultimate-guide.html">useful guide</a>.</p>
+		<p>Changes coming soon (To do list): </p>
+		<ul>
+		<li>Centered positioning of board</li>
+		<li>Preview next piece(s)</li>
+		<li>More visual effects and animations: CSS3 transitions for animation, with fallback to JS animation. In particular I want a satisfying effect for the hard drop.</li>
+		</ul>
+		<p>Articles</p>
+		<ul>
+		<li><a href="secrets-of-cybersports-success.html">Secret of cybersports success</a>.</li>
+		<li><a href="lock-front-door.html">How to Recode the Lock on the Front Door?</a>.</li>
+		<li><a href="expert-tips.html">Expert tips</a>.</li>
+		<li><a href="best-threesome-app-to-install.html">App to install</a>.</li>
+		<li><a href="choosing-your-role-in-dota-2.html">Choosing Your Role</a>.</li>
+		<li><a href="guide-for-earning-money.html">Guide for Earning Money</a>.</li>
+		<li><a href="forex-brokers-with-the-best-reviews-from-traders.html">Forex Brokers</a>.</li>
+		<li><a href="dota-2-patch-7-26c-leads-to-a-great-number-of-changes.html">Number of Changes</a>.</li>
+		<li><a href="original-gift-ideas-for-your-beloved.html">Original Gift Ideas for Your Beloved</a>.</li>
+		<li><a href="redmine-plugins.html">Redmine plugins</a>.</li>
+		<li><a href="mobile-casino-with-paypal-deposit-in-usa.html">PayPal deposit</a>.</li>
+		<li><a href="fullerene-c60.html">Fullerene C60</a>.</li>
+		<li><a href="swimming-by-the-alanya-waterfall.html">Swimming by the Alanya Waterfall</a>.</li>
+		</ul>
+		<p><input type="button" onclick="var result = TETRIS.toggle_touch_draw(); if (result) {this.value = &quot;Turn Touch Debug Off&quot;; } else { this.value=&quot;Turn Touch Debug On&quot;;}" value="Toggle touch debug"></p>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+</body></html>

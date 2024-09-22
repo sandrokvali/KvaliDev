@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<link rel="manifest" href="/manifest.json">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/9c1c9cdf2e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="main.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <h1 class="title">Tic Tac Toe</h1>
+    <p class="disclaimer">Note: For best experience play on desktop</p>
+    <div class="container">
+      <div class="scoreboard-wrap">
+        <div class="player1-info score-item">
+          <h2 class="p1-name">Player one</h2>
+          <h3 class="p1-score">3</h3>
+        </div>
+        <div class="player2-info score-item">
+          <h2 class="p2-name">Player two</h2>
+          <h3 class="p2-score">3</h3>
+        </div>
+      </div>
+      <div class="gameWrap"></div>
+      <div class="nameForm">
+        <input type="text" class="p1 name" value="Player 1" />
+        <input type="text" class="p2 name" value="Player 2" />
+        <button class="ready">Ready</button>
+      </div>
+      <div class="gameType">
+        <div class="cpu">
+          <i class="fas fa-user"></i>
+          <p>1 Player</p>
+        </div>
+        <div class="twoPlayer">
+          <i class="fas fa-user-friends"></i>
+          <p>2 Player</p>
+        </div>
+      </div>
+    </div>
+    <div class="end-screen">
+      <h3 class="player-name">Player 1 Wins!</h3>
+      <button class="restart">Restart</button>
+      <button class="newGame">New Game</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

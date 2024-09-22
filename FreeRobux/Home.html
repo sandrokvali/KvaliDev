@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<link rel="manifest" href="/manifest.json">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">span.iconify, i.iconify, iconify-icon { display: inline-block; width: 1em; }</style>
+    <!-- <meta property="og:image" content="https://static01.nyt.com/newsgraphics/images/icons/defaultPromoCrop.png" /> -->
+    <link rel="icon" href="https://cdn.discordapp.com/emojis/817491907529015308.png?v=1">
+    <link href="./KVALI COUP_files/css" rel="stylesheet">
+    <script async="" src="./KVALI COUP_files/analytics.js.download"></script><script src="./KVALI COUP_files/iconify.min.js.download"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="https://COUP.sandrokvaliashv.repl.co/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Free Robux</title>
+  <style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Muli', sans-serif;
+}
+
+p, b, h1,h2,h3{
+  font-family: 'Muli', sans-serif;
+}
+
+input {
+  font-size: 20px;
+  padding-left: 2px;
+  border: 2px solid #BCBCBC;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.5s;
+}
+input[type=text]:focus {
+  border: 2px solid #555;
+}
+button{
+  cursor: pointer;
+}
+
+.version-number {
+  color: #BCBCBC;
+  font-size: 10px;
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+}
+
+.website-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  background-color: #F2F2F2;
+  border-radius: 5px;
+  padding: 5px;
+  transition-duration: 0.3s;
+}
+.website-link:hover{
+  color: #FFFFFF;
+  background-color: #2B2B2B;
+}
+
+.createGameContainer, .joinGameContainer {
+  position: absolute;
+  top:20VH;
+  margin-left: 12%;
+  width: 76%;
+}
+
+.footer{
+  position: absolute;
+  width: 90VW;
+  margin-left: 5VW;
+  bottom: 20px;
+}
+
+.homeContainer{
+  position: absolute;
+  width: 90VW;
+  margin-left: 5VW;
+  top: 8VH;
+}
+
+.homeModalContainer {
+  margin: auto;
+  margin-top: 10px;
+  display: block;
+  width: 54px;
+}
+
+.homeContainer img{
+  width: 100px;
+  height: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.home{
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 100px;
+  border-radius: 5px;
+  font-family: 'Muli', sans-serif;
+  background-color: #73C373;
+  border: none;
+  color: white;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.RoomCode {
+  background-color: #F2F2F2;
+  border: 2px solid #707070;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.createButton, .joinButton{
+  min-width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  font-family: 'Muli', sans-serif;
+  background-color: #73C373;
+  border: none;
+  color: white;
+  margin: 20px;
+  margin-bottom: 0px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.createButton:disabled, .joinButton:disabled{
+  background-color: #2B2B2B;
+}
+
+.startGameButton{
+  /* min-width: 100px; */
+  /* height: 30px; */
+  border-radius: 5px;
+  font-family: 'Muli', sans-serif;
+  background-color: #5FC15F;
+  border: none;
+  color: white;
+  margin: 20px;
+  margin-bottom: 0px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.readyUnitContainer {
+  width: 205px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.readyUnit {
+  /* min-width: 150px;
+  max-width: 200px; */
+  width: 200px;
+  border-radius: 5px;
+  font-family: 'Muli', sans-serif;
+  background-color: #73C373;
+  border: none;
+  padding-left: 5px;
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.readyUnit b{
+  text-align: right;
+}
+
+.readyUnit p, .readyUnit b{
+  color: #ffffff
+}</style><style>.PlayerBoardItem{
+    background-color: #73C373;
+    margin-bottom: 20px;
+    padding: 5px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.PlayerBoardItem h2{
+    margin-top: 10px;
+    font-weight: lighter;
+    color: white;
+    line-height: 80%;
+}
+
+.PlayerBoardItem p{
+    line-height: 50%;
+    font-weight: regular;
+    color: white;
+}
+
+.PlayerBoardContainer {
+    
+}
+</style><style>.PlayerInfo {
+    text-align: left;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border: 2px solid #707070;
+    border-radius: 5px;
+    line-height: 40%;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.Rules, .CheatSheet {
+  cursor: pointer;
+  text-align: left;
+  position: absolute;
+  left: 10px;
+  top: 80px;
+  /* border: 2px solid #707070; */
+  border-radius: 5px;
+  line-height: 40%;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #F2F2F2;
+  display: flex;
+  align-items: center;
+}
+
+.HomeRules {
+  cursor: pointer;
+  text-align: center;
+  /* border: 2px solid #707070; */
+  border-radius: 5px;
+  line-height: 40%;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #F2F2F2;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.CheatSheet {
+  top: 110px;
+}
+
+.CheatSheetModal {
+  outline: none;
+  position: absolute;
+  top: 100px;
+  left: 5px;
+  right: 5px;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right:5px;
+  background-color: #FFFFFF;
+}
+
+.CheatSheetContainer img {
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.Rules p, .HomeRules p, .CheatSheet p{
+  font-size: 12px;
+  margin: 8px;
+  /* margin: 0; */
+  /* padding-bottom: 5px; */
+  margin-left: 0px;
+  margin-right: 2px;
+  display: inline-block;
+}
+
+.RulesContent h1, h3 {
+  line-height: 5px;
+}
+
+.RulesContent h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.RulesContent h3 {
+  text-decoration: underline;
+}
+
+.RulesContainer {
+  overflow: hidden;
+  /* padding-bottom: 10px; */
+  /* height: 100%; */
+}
+
+.RulesContent {
+  /* line-height: 12px; */
+  /* height: fit-content; */
+  overflow-y: hidden;
+}
+
+.InfoIcon {
+  /* margin: 5 auto; */
+  /* margin-top: 5px; */
+  display: inline-block;
+}
+
+.CloseModalButtonContainer {
+}
+
+.CloseModalButton {
+  top: 10px;
+  left: 10px;
+  padding: 0;
+  background-color: #FFFFFF;
+  border: 0px;
+}
+
+.cls-1, .cls-4 {
+  fill: none;
+}
+
+.cls-1 {
+  stroke: #2c2c2c;
+}
+
+.cls-2 {
+  fill: #2c2c2c;
+  font-size: 16px;
+  font-family: MalayalamSangamMN, Malayalam Sangam MN;
+}
+
+.cls-3 {
+  stroke: none;
+}
+
+
+.cls-5, .cls-8 {
+  fill: none;
+}
+
+.cls-5 {
+  stroke: #707070;
+}
+
+.cls-6 {
+  fill: #767676;
+  font-size: 16px;
+  font-family: MalayalamSangamMN, Malayalam Sangam MN;
+}
+
+.cls-7 {
+  stroke: none;
+}
+
+.InfluenceSection {
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* width: 300px; */
+    display: inline-block;
+}
+
+.InfluenceSection p{
+    text-align: center;
+}
+
+.InfluenceSection h3{
+    text-align: center;
+}
+
+.InfluenceUnitContainer {
+    width: 110px;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 30%;
+    display: inline-block;
+}
+
+.CurrentPlayer {
+    text-align: right;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+
+.EventLogContainer {
+    border-right: 2px solid #707070;
+    /* border-left: 0px; */
+    padding-right: 5px;
+    padding-left: 5px;
+    position: absolute;
+    font-size: 12px;
+    right: 15px;
+    top: 60px;
+    text-align: right;
+    line-height: 40%;
+}
+.EventLogBody {
+    overflow-y: scroll;
+    height: 9VH;
+    padding-right: 3px;
+}
+.EventLogTitle {
+    margin: 0;
+    margin-bottom: 5px;
+}
+.bold {
+    font-weight: bold;
+}
+.new {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+.GameHeader {
+    position: relative;
+    height: 22VH;
+}
+
+.GameContainer {
+    text-align: center;
+}
+
+.circle {
+    height: 30px;
+    width: 30px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+.DecisionsSection button {
+    min-width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: 'Muli', sans-serif;
+    background-color: #BCBCBC;
+    border: none;
+    color: white;
+    margin: 20px;
+    margin-bottom: 0px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+#captain {
+    background-color: #80C6E5;
+}
+#duke {
+    background-color: #D55DC7;
+}
+#assassin {
+    background-color: #2B2B2B;
+}
+#contessa {
+    background-color: #E35646;
+}
+#ambassador {
+    background-color: #B4CA1F;
+}
+#captain-color {
+  color: #80C6E5;
+}
+#duke-color {
+  color: #D55DC7;
+}
+#assassin-color {
+  color: #2B2B2B;
+}
+#contessa-color {
+  color: #E35646;
+}
+#ambassador-color {
+  color: #B4CA1F;
+}
+.DecisionTitle {
+    text-align: left;
+    margin-left: 22px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .ReactModal__Content {
+      width: 60%;
+      margin: auto;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .PlayerInfo {
+      left: 10VW;
+      top: 5VH;
+    }
+    .CurrentPlayer {
+        text-align: right;
+        position: absolute;
+        right: 10VW;
+        top: 5VH;
+    }
+    .Rules{
+      left: 10VW;
+      top: 17VH;
+    }
+    .CheatSheet{
+      left: 10VW;
+      top: 22VH;
+    }
+    .CheatSheetModal {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      right: 40px;
+      background-color: #FFFFFF;
+    }
+    .EventLogContainer {
+        text-align: right;
+        position: absolute;
+        right: 10VW;
+        top: 10VH;
+    }
+    .GameHeader {
+        height: 15VH;
+    }
+    .DecisionTitle {
+        margin-left: 10VW;
+    }
+    .DecisionButtonsContainer  {
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+    }
+  }</style><style>.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style></head>
+  <body data-new-gr-c-s-check-loaded="14.1027.0" data-gr-ext-installed="" class="">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><div><div class="homeContainer"><h1>FrEe RObux!</h1><p>Get Ur fREe rOBux HerE!</p><div class="input-group-btn"><a class="home" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"">Free Robux</a></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./static/bundle.js"></script><script src="./static/0.chunk.js"></script><script src="./static/main.chunk.js"></script><div class="ReactModalPortal"></div>
+
+<img src="https://shareit.pics/image.php?id=KXCT1S.png"></body>
